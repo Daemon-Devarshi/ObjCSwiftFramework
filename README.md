@@ -7,23 +7,34 @@ Project Structure:
 a. Package: ObjCPackage
 
 ObjCPackage
+
   |- Package.swift
+  
   |- ObjCPackage
-          |- MathsUtilities.h (class interface)
-          |- MathsUtilities.m (class implementation)
-          |- NiceLogs.h (protocol)
+
+   - MathsUtilities.h (class interface)
+  
+   - MathsUtilities.m (class implementation)
+  
+   - NiceLogs.h (protocol)
+  
+          
 
 b. Project: ObjCSwiftFramework
 
 ObjCSwiftFramework
+
   |- ObjCSwiftFramework.h (umbrella header)
+  
   |- Calculation.h (objc class interface)
+  
   |- Calculation.m (objc class implementation)
+  
   |- SwiftCalci.swift (swift class)
 
 Details:
 - #import <ObjCSwiftFramework/Calculation.h> added in ObjCSwiftFramework.h as Calculation has to be used in SwiftCalci
-- Calculation.h to marked as public in target membership in Xcode
+- Calculation.h marked as public in target membership in Xcode so that it can be added in umbrella header ObjCSwiftFramework.h
 - #import "NiceLogs.h" in Calculation.h gives error
 
 
