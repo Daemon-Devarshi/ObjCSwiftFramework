@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NiceLogs.h"
+#import "NiceLogs.h" // This gives compilation error. Nice Logs is part of ObjCPackage
 
 NS_ASSUME_NONNULL_BEGIN
 
