@@ -14,7 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 // This cannot be declared as super class of Calculation
-//@interface Calculation : NSObject <NiceLogs> // This gives error: Attempting to use the forward class 'SuperClassInPackage' as superclass of 'Calculation'
+//@interface Calculation : SuperClassInPackage <NiceLogs> // This gives error: Attempting to use the forward class 'SuperClassInPackage' as superclass of 'Calculation'
 @interface Calculation : NSObject <NiceLogs> // This gives warning: Cannot find protocol definition for 'NiceLogs'
 @end
 
