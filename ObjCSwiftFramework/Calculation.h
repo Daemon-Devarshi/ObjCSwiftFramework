@@ -5,12 +5,16 @@
 //  Created by Devarshi on 14/05/24.
 //
 
-#import <Foundation/Foundation.h>
-#import "NiceLogs.h" // This gives compilation error. Nice Logs is part of ObjCPackage
 
+#import <Foundation/Foundation.h>
+//#import "SuperClassInPackage.h" // This gives error: Cannot find interface declaration for 'SuperClassInPackage', superclass of 'Calculation'
+
+@protocol NiceLogs;
+//@class SuperClassInPackage; // This gives error: Attempting to use the forward class 'SuperClassInPackage' as superclass of 'Calculation'
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Calculation : NSObject <NiceLogs>
+// This cannot be declared as super class of Calculation
+@interface Calculation : NSObject <NiceLogs> // This gives warning: Cannot find protocol definition for 'NiceLogs'
 @end
 
 NS_ASSUME_NONNULL_END
