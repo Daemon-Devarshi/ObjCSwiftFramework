@@ -9,6 +9,6 @@
 
 @implementation SuperClassInPackage
 - (void)overrideMe {
-    NSLog(@"This method should be overridden!")
+    NSLog(@"This method should be overridden!");
 }
 @end

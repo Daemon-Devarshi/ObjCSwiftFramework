@@ -16,3 +16,4 @@ FOUNDATION_EXPORT const unsigned char ObjCSwiftFrameworkVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <ObjCSwiftFramework/PublicHeader.h>
 
 #import <ObjCSwiftFramework/Calculation.h>
+#import <ObjCSwiftFramework/InternalProtocol.h>
